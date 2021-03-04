@@ -1,0 +1,33 @@
+<view class="contianer">
+  <view class="main">
+    <view class="main-item">
+      <view>头像</view>
+      <view class="main-item-right" bindtap="uploadHeadImg">
+        <image class="avatar" src="{{upload_cover}}"></image>
+        <image class="right" src="/icon/right.svg"></image>
+      </view>
+    </view>
+    <view style="border:1px solid #e5e5e5"></view>
+    <view class="main-item">
+      <view>昵称</view>
+      <view class="main-item-right" bindtap="clickNickName">
+        <view class="nickName">{{nickName}}</view>
+        <image class="right" src="/icon/right.svg"></image>
+      </view>
+    </view>
+    <view style="border:1px solid #e5e5e5"></view>
+    <view class="main-item">
+      <view>性别</view>
+      <view class="main-item-right">
+        <!-- <view>保密</view> -->
+        <picker mode="selector" bindchange="bindPickerChange" value="{{status}}" range="{{sex}}">
+          <view class="picker">
+            {{sex[status]}}
+          </view>
+        </picker>
+        <image class="right" src="/icon/right.svg"></image>
+      </view>
+    </view>
+    <view style="border:1px solid #e5e5e5"></view>
+  </view>
+</view>

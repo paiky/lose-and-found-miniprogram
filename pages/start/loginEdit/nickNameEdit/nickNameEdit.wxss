@@ -1,0 +1,22 @@
+.container{
+
+}
+.item{
+  /* border: 1px solid red; */
+  margin: 20px 0 10px 0;
+}
+.amount{
+  /* border: 1px solid black; */
+  padding: 0 5px;
+  text-align: right;
+}
+input{
+  background-color: white;
+  /* border: 1px solid purple; */
+  height: 50px;
+  color: black;
+  padding: 0 10px;
+}
+.bottom{
+  margin-top: 20px;
+}

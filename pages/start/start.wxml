@@ -1,0 +1,22 @@
+<view class="container">
+  <view class="cover">
+    <image src="/icon/shiwuzhaoling.png" mode="aspectFill"></image>
+  </view>
+  <view class="main">
+    <input class="input" type="text" placeholder="请输入手机号/用户名" value="{{phone}}" bindinput="bindPhoneInput"
+    placeholder-style="color:#cccccc;font-size:35rpx;" />
+    <input class="input" type="password" placeholder="请输入密码" value='{{password}}' bindinput="bindPwdInput"
+    placeholder-style="color:#cccccc;font-size:35rpx;" />
+  </view>
+  <view class="main-bottom">
+    <view>忘记密码</view>
+  </view>
+  <view class="footer">
+    <view>
+      <button bindtap="clickLogin">注册/登录</button>
+    </view>
+    <view style="margin-top:10px;">
+      <button type="primary" bindgetuserinfo="clickWXLogin" open-type="getUserInfo">一键登录</button>
+    </view>
+  </view>
+</view>

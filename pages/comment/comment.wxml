@@ -1,0 +1,39 @@
+<!--pages/comment/comment.wxml-->
+<view class="container">
+  <scroll-view class="main-content" wx:for="{{comments}}" wx:key="index">
+    <view class="comment-view">
+      <view class="comment-view-left">
+        <image src="{{item.headImg}}"></image>
+      </view>
+      <view class="comment-view-right">
+        <view class="comment-author">{{item.userName}}</view>
+        <view class="comment-date">{{item.comment.date}}</view>
+        <view class="comment-content">
+          {{item.comment.content}}
+        </view>
+      </view>
+    </view>
+    <view style="border:1px solid rgb(247,247,247)"></view>
+  </scroll-view>
+
+  <!-- <view class="bottom-view">
+    <textarea class="bottom-input" maxlength="1000" show-confirm-bar="{{false}}" placeholder="评论..." fixed="true"
+      auto-height="true" cursor-spacing="44" adjust-position="{{true}}" value="{{textareaValue}}"
+      bindfocus="textareaFocus" bindblur="textareaBlur" bindinput="textareaInput"></textarea>
+    <view class="bottom-view2" hidden="{{isNotFocus}}">
+      <view class="public" bindtap="comment">发布</view>
+    </view>
+  </view> -->
+
+  <view class="comment-bottom-view">
+    <textarea class="bottom-input" maxlength="1000" show-confirm-bar="{{false}}" placeholder="评论..." fixed="true"
+      auto-height="true" cursor-spacing="44" adjust-position="{{true}}" model:value="{{textareaValue}}"
+      bindblur="textareaBlur" bindinput="textareaInput"></textarea>
+    <view class="bottom-view2">
+      <!-- <image src="/icon/waizui.jpg"></image> -->
+      <view class="send" bindtap="clickComment">发送</view>
+    </view>
+  </view>
+
+  <view class="comment-bottom">再怎么找也没有啦~</view>
+</view>

@@ -1,0 +1,94 @@
+@import '/common/iconfont.wxss';
+
+page {
+    /* background-color: white; */
+}
+
+.top {
+    display: flex;
+    padding-top: 10rpx;
+    /* justify-content: flex-start; */
+}
+
+.top-view {
+    text-align: center;
+    border: 1px solid;
+    width: 100rpx;
+    height: auto;
+    /* background-color: chartreuse; */
+    margin-left: 20rpx;
+}
+
+.header {
+    margin: 30rpx;
+    border-bottom: 1px solid black;
+}
+
+.eidt-detail-images-container .btn-container {
+    margin-top: 20rpx;
+}
+
+.eidt-detail-images-container .btn-container .btn-view {
+    padding: 0rpx 32rpx 32rpx 32rpx;
+}
+
+.eidt-detail-images-container .btn-container .btn-view button {
+    border-radius: 0rpx;
+}
+
+.wrapper {
+    padding: 5px;
+}
+
+.iconfont {
+    display: inline-block;
+    padding: 8px 8px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.toolbar {
+    box-sizing: border-box;
+    border-bottom: 0;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+
+.ql-container {
+    box-sizing: border-box;
+    padding: 12px 15px;
+    width: 100%;
+    min-height: 50vh;
+    height: 100%;
+    background: #fff;
+    margin-top: 20rpx;
+    font-size: 20px;
+    line-height: 1.5;
+    border: 1px solid #eee;
+}
+
+.ql-active {
+    color: #06c;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10rpx;
+}
+
+.upload_cover {
+    /* border: 1px solid blue; */
+    height: 50px;
+    padding: 15rpx;
+    display: flex;
+    align-items: center;
+}
+
+.upload_cover_icon {
+    position: relative;
+    right: 100px;
+    height: 100%;
+    /* border: 1px solid red; */
+}

@@ -1,0 +1,22 @@
+<view class="container" style="height:{{windowHeight}}px">
+  <scroll-view style="height:100%" class="scroll" scroll-y scroll-with-animation refresher-enabled
+    bindrefresherrefresh="onRefresh" refresher-threshold="{{100}}" refresher-triggered="{{triggered}}">
+    <block wx:for="{{replyData}}" wx:key="index">
+      <view class="row">
+        <view class="headImg">
+          <image src="{{item.headImg}}">
+          </image>
+        </view>
+        <view class="row-mid">
+          <view class="author">{{item.userName}}</view>
+          <view class="content">{{item.content}}</view>
+          <view class="date">{{item.date}}</view>
+        </view>
+        <view class="cover">
+          <image mode="aspectFill" src="{{item.goodImg}}"></image>
+        </view>
+      </view>
+      <view style="border:1px solid #e1e1e1;"></view>
+    </block>
+  </scroll-view>
+</view>

@@ -1,0 +1,128 @@
+/* pages/goodInfo/goodInfo.wxss */
+page{
+  background-color: white;
+}
+.container{
+  padding: 20rpx;
+}
+.header-title{
+  font-size: 50rpx;
+  color: black;
+  font-weight: 550;
+}
+.main{
+  margin-top: 20rpx;
+}
+.main-top{
+  display: flex;
+  justify-content: space-between;
+}
+.author-info{
+  display: flex;
+  align-items: center;
+  width: 85%;
+  /* border: 1px solid red; */
+}
+.chat{
+  width: 15%;
+  /* border: 1px solid red; */
+  border-radius: 8px;
+  background-color: rgb(243, 243, 243);
+  color: rgb(255, 62, 4);
+  font-size: 28rpx;
+  font-weight: 550;
+  text-align: center;
+}
+.author-info image{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+}
+.author-info .author-name{
+  font-size: 30rpx;
+  color: black;
+  font-weight: 600;
+  margin-left: 10rpx;
+}
+.content{
+  /* border: 1px solid red; */
+  padding: 5px;
+  margin-top: 20rpx;
+  font-size: 35rpx;
+  text-align: justify;
+  color: rgb(104, 104, 104);
+  line-height: 60rpx;
+}
+
+.footer-edit{
+  /* border: 1px solid; */
+  display: flex;
+  align-items: center;
+  font-size: 25rpx;
+  margin-top: 20rpx;
+
+}
+
+.edit-time{
+  margin-left: 10rpx;
+  /* margin-top: 20rpx; */
+  /* font-size: 25rpx; */
+}
+
+.footer{
+  margin-top: 30rpx;
+}
+.comment-title{
+  color: black;
+  font-weight: 600;
+}
+.comment-row{
+  display: flex;
+  align-items: center;
+  margin-top: 20rpx;
+}
+.comment-row-head{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+}
+.comment-row-right{
+  margin-left: 20rpx;
+  width: 90%;
+  /* border:1px solid */
+}
+.comment-row-right .author{
+  font-size: 28rpx;
+}
+.comment-row-right .comment-content{
+  /* width: 70%; */
+  font-size: 30rpx;
+  color: black;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.show-more{
+  margin:20rpx 0 0 70rpx;
+  font-size: 28rpx;
+  color: blue;
+  font-weight: 600;
+}
+.comment-bottom{
+  display: flex;
+  align-items: center;
+  margin: 20rpx 0 10rpx 0;
+  /* border: 1px solid; */
+}
+.comment-bottom image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.comment-bottom input{
+  margin-left: 20rpx;
+  border: 1px solid rgb(204, 200, 200);
+  border-radius: 10px;
+  font-size: 28rpx;
+  padding-left: 10rpx;
+  width: 80%;
+}

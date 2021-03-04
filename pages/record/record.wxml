@@ -1,0 +1,19 @@
+<view class="container">
+  <scroll-view style="height:100%" class="scroll" scroll-y bindscrolltolower="reactBottom" scroll-with-animation>
+    <block wx:for="{{goods}}" wx:key="index">
+      <view class="main-item" bindtap="clickDetail" data-modal="{{item.id}}" bindlongpress="handleLongPress">
+        <view class="main-item-left" wx:if="{{item.contentImage}}">
+          <image mode="aspectFill" class="cover" src="{{item.contentImage}}"></image>
+        </view>
+        <view class="main-item-right" style="{{item.contentImage?'width:58%':'width:95%'}}">
+          <view class="title">{{item.title}}</view>
+          <view class="content">
+            {{item.text}}
+          </view>
+          <view class="time">{{item.pubTime}}</view>
+        </view>
+      </view>
+      <view style="border:1px solid #e5e5e5;"></view>
+    </block>
+  </scroll-view>
+</view>

@@ -1,0 +1,10 @@
+.container{
+  /* border: 1px solid red; */
+  text-align: center;
+  padding-top: 50%
+}
+.login{
+  margin-top: 20px;
+  color: rgb(97, 97, 231);
+  font-size:30rpx;
+}

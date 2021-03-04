@@ -1,0 +1,4 @@
+<view class="container" style="height:{{windowHeight}}px">
+  <button class="btn" type="primary" bindgetuserinfo="clickWXLogin" open-type="getUserInfo">一键登录</button>
+  <view class="login">手机号登录/注册</view>
+</view>

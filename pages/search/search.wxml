@@ -1,0 +1,41 @@
+<!--pages/search/search.wxml-->
+<view class="header">
+	<view class="input-view">
+		<image src="/icon/search.svg"></image>
+		<input focus="{{true}}" value="{{searchContent}}" data-modal="content" type="text" placeholder="搜索内容" bindconfirm="confirmTap"
+		bindinput="inputChange"></input>
+	</view>
+	<picker mode="selector" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+		<view class="picker">
+			{{array[status]}}
+		</view>
+	</picker>
+	<text bindtap="cancelSearch">取消</text>
+</view>
+<view class="tipToast" hidden="{{tip}}">
+  {{tipContent}}
+</view>
+<view class="main">
+	<scroll-view class="main-content" scroll-y bindscrolltolower="loadMore" style='height:{{scrollHeight}}px'>
+		<view class="main-content-view" wx:for="{{goods}}" wx:key="index" bindtap="goodClick" data-modal="{{item.goods.id}}">
+			<view class="main-content-header">
+				<text class="main-content-title">{{item.goods.title}}</text>
+				<text class="main-content-time">{{item.goods.publicTime}}</text>
+			</view>
+			<view class="main-content-main">
+				<view class="main-content-main-left">
+					<view class="main-content-main-left-author">
+						<image src="{{item.headImg}}"></image>
+						<text>{{item.userName}}</text>
+					</view>
+					<view class="main-content-main-left-content">
+						<rich-text nodes="{{item.goods.content}}"></rich-text>
+					</view>
+				</view>
+				<image mode="aspectFill" class="main-content-main-right-image" src="{{item.goods.contentImage}}"></image>
+			</view>
+			<view class="main-content-footer"></view>
+		</view>
+
+	</scroll-view>
+</view>

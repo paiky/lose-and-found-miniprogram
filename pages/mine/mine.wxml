@@ -1,0 +1,37 @@
+<view class="container">
+  <view class="header" wx:if="{{hasLogin}}">
+    <image src="{{avatarUrl}}"></image>
+    <view class="username">{{nickName}}</view>
+    <view class="editbtn" bindtap="clickEdit">编辑</view>
+  </view>
+  <view class="header" wx:else>
+    <image src="/icon/user.svg"></image>
+    <view class="loginbtn">
+      <button size="mini" type="primary" open-type="getUserInfo" bindgetuserinfo="clickLogin">一键登录</button>
+    </view>
+  </view>
+  <view style="border:1px solid #e7e7e7"></view>
+  <view class="main" wx:if="{{hasLogin}}">
+    <view class="main-top">
+      <view class="main-top-left">发布记录</view>
+      <view class="main-top-right">
+        <view class="seekmore" bindtap="seekMore">查看更多</view>
+        <image src="/icon/right.svg"></image>
+      </view>
+    </view>
+    <view class="main-mid">
+      <block wx:for="{{goods}}" wx:key="index">
+        <view class="main-mid-item" bindtap="clickGood" data-id="{{item.id}}">
+          <image mode="aspectFill" src="{{item.contentImage}}" wx:if="{{item.contentImage}}"></image>
+          <view class="{{item.contentImage?'main-mid-item-content':'main-mid-item-content-noimage'}}">
+            <rich-text nodes="{{item.text}}"></rich-text>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view style="border:1px solid #e7e7e7"></view>
+  <view class="footer" wx:if="{{hasLogin}}">
+    <view catchtap="clickQuit" class="quit">退出登录</view>
+  </view>
+</view>

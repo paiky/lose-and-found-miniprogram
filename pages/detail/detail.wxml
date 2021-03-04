@@ -1,0 +1,41 @@
+<!--pages/goodInfo/goodInfo.wxml-->
+<view class="container">
+	<view class="header-title">{{goods.goods.title}}</view>
+	<view class="main">
+		<view class="main-top">
+			<view class="author-info">
+				<image src="{{goods.headImg}}" class="author-image" bindtap="clickHeadImg" data-modal="{{goods.headImg}}"></image>
+				<view class="author-name">{{goods.userName}}</view>
+			</view>
+			<view class="chat" bindtap="chat" wx:if="{{!chatBtn}}">
+				私信
+			</view>
+		</view>
+		<view class="content">
+			<rich-text nodes="{{goods.goods.content}}"></rich-text>
+		</view>
+		<view class="footer-edit">
+			<text>最后编辑于</text>
+			<view class="edit-time">{{goods.goods.pubTime}}</view>
+		</view>
+		<view class="footer">
+			<view class="comment-title">评论</view>
+			<view class="comment">
+				<view class="comment-row" wx:for="{{comments}}" wx:key="index">
+					<image class="comment-row-head" src="{{item.headImg}}"></image>
+					<view class="comment-row-right">
+						<view class="author">{{item.userName}}</view>
+						<view class="comment-content">{{item.comment.content}}</view>
+					</view>
+				</view>
+
+				<view class="show-more" bindtap="click_comment" hidden="{{more_show}}">查看全部评论{{total}}条</view>
+
+				<view class="comment-bottom">
+					<image src="{{headImg}}"></image>
+					<input type="text" placeholder="添加评论..." bindtap="click_comment" disabled="{{true}}"/>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

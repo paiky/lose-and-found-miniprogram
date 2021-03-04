@@ -1,0 +1,141 @@
+page {
+  background-color: white;
+}
+
+.container {}
+
+.header {
+  padding-top: 30px;
+  /* border: 1px solid red; */
+  height: 150px;
+  text-align: center;
+  color: #212121;
+}
+
+.header image {
+  /* border: 1px solid black; */
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+}
+
+.username {
+  font-size: 18px;
+  margin: 10rpx;
+}
+
+.loginbtn{
+  margin-top: 5px;
+  /* border: 1px solid black; */
+}
+
+.editbtn {
+  /* display: inline-block; */
+  /* margin-top: 15rpx; */
+  margin: auto;
+  line-height: 28px;
+  border: 1px solid #e7e7e7;
+  width: 70px;
+  height: 28px;
+  border-radius: 5px;
+  font-size: 26rpx;
+}
+
+.main {
+  /* border: 1px solid red; */
+  font-size: 25rpx;
+  /* height: 130px; */
+}
+
+.main-top {
+  padding: 0 5px;
+  font-size: 28rpx;
+  height: 50px;
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-top-left {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid blue; */
+  color: #212121;
+}
+
+.main-top-right {
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+}
+
+.main-top-right image {
+  width: 35rpx;
+  height: 35rpx;
+}
+
+.main-mid {
+  /* border: 1px solid red; */
+  height: 140px;
+  display: flex;
+  /* justify-content: space-around; */
+}
+
+.main-mid-item {
+  width: 33%;
+  height: 80px;
+  text-align: center;
+  /* border: 1px solid black; */
+}
+
+.main-mid-item image {
+  width: 90%;
+  height: 80px;
+  border-radius: 5px;
+  /* height: 50px; */
+}
+
+.main-mid-item-content {
+  /* border: 1px solid red; */
+  /* padding: 0 10px; */
+  /* padding: 0 10px; */
+  text-align: center;
+  width: 90%;
+  margin-left: 5%;
+  /* height: 40px; */
+  font-size: 26rpx;
+  color: #212121;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.main-mid-item-content-noimage {
+  margin-top: 14%;
+  /* border: 1px solid red; */
+  text-align: center;
+  width: 90%;
+  margin-left: 5%;
+  /* height: 40px; */
+  font-size: 26rpx;
+  color: #212121;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.quit{
+  display: inline-block;
+  /* border: 1px solid; */
+}
+
+.footer{
+  margin-top: 15px;
+  text-align: center;
+  font-size: 28rpx;
+  color: #999999;
+}

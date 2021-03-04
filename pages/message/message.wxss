@@ -1,0 +1,139 @@
+/* pages/info/info.wxss */
+.container {}
+
+.top {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  padding-bottom: 25rpx;
+}
+
+.top-icon {
+  text-align: center;
+  font-size: 24rpx;
+}
+
+.replyme {
+  /* border: 1px solid red; */
+}
+
+.systemInfo {}
+
+.replyme i {
+  right: 1em;
+  top: -2em;
+  /* bottom: 2em; */
+  font-size: 10px;
+  min-width: 12px;
+  height: 16px;
+  line-height: 16px;
+  background: #fc1944;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-style: normal;
+  position: relative;
+  -webkit-transform: scale(.9);
+  transform: scale(.9);
+  vertical-align: middle;
+  padding: 0 3px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.systemInfo i {
+  right: 0.3em;
+  top: -2em;
+  /* bottom: 2em; */
+  font-size: 10px;
+  min-width: 12px;
+  height: 16px;
+  line-height: 16px;
+  background: #fc1944;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-style: normal;
+  position: relative;
+  -webkit-transform: scale(.9);
+  transform: scale(.9);
+  vertical-align: middle;
+  padding: 0 3px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.top-icon image {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.chatlist {
+  background-color: white;
+  margin-top: 25rpx;
+}
+
+.chatlist-title {
+  padding: 10rpx;
+  color: #333333;
+  font-weight: 550;
+  font-size: 28rpx;
+}
+
+.chatlist-row {
+  display: flex;
+  padding: 10rpx;
+}
+
+.chatlist-row-left {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  padding: 20rpx 10rpx 10rpx 20rpx;
+  /* border: 1px solid; */
+}
+
+.chatlist-row-left image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.chatlist-row-mid {
+  width: 65%;
+  padding: 20rpx 10rpx 10rpx 10rpx;
+  /* border: 1px solid; */
+}
+
+.chatlist-row-mid .chatlist-author {
+  color: #F8769A;
+  font-size: 32rpx;
+}
+
+.chatlist-row-mid .chatlist-words {
+  font-size: 30rpx;
+  /* color: black; */
+  margin-top: 10rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.chatlist-date {
+  width: 20%;
+  padding:20rpx 10rpx 0 0;
+  font-size: 28rpx;
+  /* border: 1px solid red; */
+  text-align: right;
+}
+
+.chatlist-tip {
+  text-align: center;
+  margin-top: 8px;
+  display: inline-block;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  background-color: red;
+  color: white;
+}

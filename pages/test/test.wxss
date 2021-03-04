@@ -1,0 +1,17 @@
+.content{
+  height: 50px;
+  line-height: 25px;
+  /* display: flex; */
+  align-items: center;
+  /* flex-wrap: wrap;
+  align-content: flex-start; */
+  margin: 10px;
+  max-width: 65%;
+  padding: 10px;
+  background-color: rgb(211, 243, 211);
+  font-size: 32rpx;
+  /* word-wrap: normal; */
+  word-wrap: break-word;
+  /* border: 1px solid yellow; */
+  /* white-space: pre-wrap; */
+}
